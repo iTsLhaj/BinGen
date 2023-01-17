@@ -11,7 +11,7 @@
 ### **ShowCase:**
 
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=rmMkRoy4ldk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+raw.githubusercontent.com/iTsLhaj/BinGen/main/assets/videos/showcase.mp4
 <br>
 
 ### **Usage:**
