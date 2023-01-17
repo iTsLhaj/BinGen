@@ -8,9 +8,23 @@
 <img src="assets/banner.gif" alt="Banner" width="720" height="340">
 
 
+### **ShowCase:**
+<video poster="assets/videos/showcase.png" width="800" height="600" controls>
+  <source src="assets/videos/showcase.mp4" type="video/mp4">
+</video>
+
+
 ### **Usage:**
 <br>
 <img src="assets/usage.gif" alt="Banner" width="720" height="340">
+<br>
+<br>
+
+**e.g:**
+```sh
+python bingen.py --type VISA --count 40 --country RANDOM
+```
+
 <br>
 
 ##### **Params:**
