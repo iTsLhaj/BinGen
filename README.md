@@ -10,11 +10,7 @@
 
 ### **ShowCase:**
 
-<br>
-raw.githubusercontent.com/iTsLhaj/BinGen/main/assets/videos/showcase.mp4.
-<video src="raw.githubusercontent.com/iTsLhaj/BinGen/main/assets/videos/showcase.mp4" controls="controls" style="max-width: 730px;">
-</video>
-<br>
+https://user-images.githubusercontent.com/115029856/213023392-be4f31c7-53e3-4b46-8d9e-0d9947bb211d.mp4
 
 ### **Usage:**
 <br>
