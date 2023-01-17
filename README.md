@@ -9,7 +9,7 @@
 
 
 ### **ShowCase:**
-<video poster="assets/videos/showcase.png" width="800" height="600" controls>
+<video poster="assets/videos/showcase.png" width="400" height="400" controls>
   <source src="assets/videos/showcase.mp4" type="video/mp4">
 </video>
 
