@@ -9,7 +9,7 @@
 
 
 ### **ShowCase:**
-[![Showcase]](https://www.youtube.com/watch?v=rmMkRoy4ldk)
+[![Showcase](assets/videos/showcase.png)](https://www.youtube.com/watch?v=rmMkRoy4ldk)
 
 
 ### **Usage:**
