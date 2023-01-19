@@ -25,6 +25,20 @@ python bingen.py start --type VISA --count 40 --country RANDOM
 
 <br>
 
+##### **Installation:**
+<br>
+
++ FOR **_WINDOWS USERS_:**
+    - just run setup.bat ```C:\Users\LHAJ> setup.bat```
+    - for windows i highly recommend to change the cmd font to something like "cascadia mono" !
+
+<br>
+
++ FOR **_WINDOWS USERS_:**
+    - same thing just run the .sh file ```$>/setup.sh ```
+
+<br>
+
 ##### **Params:**
 <br>
 
@@ -51,34 +65,20 @@ python bingen.py start --type VISA --count 40 --country RANDOM
     2. canada bin: ```--country CANADA```
     3. poland bin: ```--country POLAND````
 
-    - u just switch to **upper case**
-    - here"s a (_json_) country list below
-<br>
-<br>
-
-- **You Can List Countries Using**
-```sh
-python bingen.py help --countries
-```
-
-##### **Installation:**
-<br>
-
-+ FOR **_WINDOWS USERS_:**
-    - just run setup.bat ```C:\Users\LHAJ> setup.bat```
-    - for windows i highly recommend to change the cmd font to something like "cascadia mono" !
+- u just switch to **upper case**
+- here"s a (_json_) country list below
 
 <br>
-
-+ FOR **_WINDOWS USERS_:**
-    - same thing just run the .sh file ```$>/setup.sh ```
-
 <br>
 
 ##### **Notes:**
 <br>
 
-- **NOTE**: u can check countries using ```--country_list```
+- **NOTE**: u can check countries using ```help --countries```
+- **TODO**: **You Can List Countries Using**
+```sh
+python bingen.py help --countries
+```
 - **NOTE**: all params above are required except country which is _USA_ by default
 <br>
 <br>
