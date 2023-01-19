@@ -22,7 +22,7 @@
 
 **e.g:**
 ```sh
-python bingen.py --type VISA --count 40 --country RANDOM
+python bingen.py start --type VISA --count 40 --country RANDOM
 ```
 
 <br>
@@ -57,6 +57,11 @@ python bingen.py --type VISA --count 40 --country RANDOM
     - here"s a (_json_) country list below
 <br>
 <br>
+
+- **You Can List Countries Using**
+```sh
+python bingen.py help --countries
+```
 
 ##### **Installation:**
 <br>

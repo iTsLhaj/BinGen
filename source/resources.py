@@ -111,7 +111,7 @@ m_COUNTRIES_ = {
     "Suriname": "sr",
     "Sweden": "se",
     "Switzerland": "ch",
-    "Taiwan(China)": "tw",
+    "Taiwan": "tw",
     "Tanzania": "tz",
     "Thailand": "th",
     "The Czech Republic": "cz",
@@ -129,6 +129,5 @@ m_COUNTRIES_ = {
     "Vietnam": "vn",
     "Yemen": "ye",
     "Zambia": "zm",
-    "Zimbabwe": "zw",
-    "Киргизия": "kg"
+    "Zimbabwe": "zw"
 }

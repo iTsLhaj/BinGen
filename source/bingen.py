@@ -159,7 +159,7 @@ class BinGen_:
         self.generate_bins()
         self.process_data()
         
-        # # TODO: add those
+        # TODO: add those
         if self.save_data():
             self._quit()
         else:
@@ -184,32 +184,46 @@ if __name__ == "__main__":
         description=" (˶˃ᆺ˂˶) A Simple BinLookup/BinGenerator Using Requests & Makin in beautiful using rich lib (˶˃ᆺ˂˶) ",
         epilog="Thanks for your time CHAD *** XD",
     )
+    subparser = parser.add_subparsers(dest='command')
+    start = subparser.add_parser('start')
+    help_ = subparser.add_parser('help')
 
-    parser.add_argument("--count", type=int, required=True)
-    parser.add_argument("--type", type=str, required=True)
-    parser.add_argument("--country", type=str, required=False, default="UNITED_STATES")
+    start.add_argument("--count", type=int, required=True)
+    start.add_argument("--type", type=str, required=True)
+    start.add_argument("--country", type=str, required=False, default="UNITED_STATES")
+
+    help_.add_argument("--countries", action="store_true", required=False)
 
     args = parser.parse_args()
 
-    # TODO: check if type isn't VISA | MASTER
-    if not (args.type == "VISA" or args.type == "MASTER"): 
-        # print("--type should be either VISA or MASTER")
-        logger_.error("type error !")
-        console.print("\t   [z3bol][!][/z3bol]\t    [kinga]--type[/kinga] should be either [mok]VISA[/mok] or [mok]MASTER[/mok]")
-        sys.exit(-1)
-    else:
-        
-        if args.type == "VISA": args.type = VISA
-        if args.type == "MASTER": args.type = MASTER
+    if args.command == 'help':
+        os.system(CLEAN_cmd)
+        print('\n')
+        for k, v in m_COUNTRIES_.items():
+            m_country_ = "_".join(k.split(' '))
+            console.print(f" > [mok]{m_country_}[/mok]")
+        exit(0)
+    elif args.command == 'start':
 
-        # NOTE: i don't think a MAX_COUNT is needed | i hate limits 'MATH NERD KHO TSHAPISTA dw'
-        # TODO: check the country if valid
-        bladzPi_ = str(args.country).title().replace('_', ' ')
-        if bladzPi_ in [k for k, _ in m_COUNTRIES_.items()]:
-            os.system(CLEAN_cmd)
-            BinGen_.bannerWhoTf()
-            BinGen_(type_=args.type, count_=args.count, country_=args.country).__call__()
+        # TODO: check if type isn't VISA | MASTER
+        if not (args.type == "VISA" or args.type == "MASTER"): 
+            # print("--type should be either VISA or MASTER")
+            logger_.error("type error !")
+            console.print("\t   [z3bol][!][/z3bol]\t    [kinga]--type[/kinga] should be either [mok]VISA[/mok] or [mok]MASTER[/mok]")
+            sys.exit(-1)
         else:
-            logger_.error(f" {bladzPi_} ? BRO THIS PLACE DOESN'T EXIST ?! LMAO")
-    
-    # TODO: add logging leve NOTSET | DEBUG | INFO
+            
+            if args.type == "VISA": args.type = VISA
+            if args.type == "MASTER": args.type = MASTER
+
+            # NOTE: i don't think a MAX_COUNT is needed | i hate limits 'MATH NERD KHO TSHAPISTA dw'
+            # TODO: check the country if valid
+            bladzPi_ = str(args.country).title().replace('_', ' ')
+            if bladzPi_ in [k for k, _ in m_COUNTRIES_.items()]:
+                os.system(CLEAN_cmd)
+                BinGen_.bannerWhoTf()
+                BinGen_(type_=args.type, count_=args.count, country_=args.country).__call__()
+            else:
+                logger_.error(f" {bladzPi_} ? BRO THIS PLACE DOESN'T EXIST ?! LMAO")
+        
+        # TODO: add logging leve NOTSET | DEBUG | INFO
