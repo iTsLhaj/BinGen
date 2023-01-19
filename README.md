@@ -9,10 +9,8 @@
 
 
 ### **ShowCase:**
-<video poster="assets/videos/showcase.png" width="800" height="600" controls>
-  <source src="assets/videos/showcase.mp4" type="video/mp4">
-</video>
 
+https://user-images.githubusercontent.com/115029856/213023392-be4f31c7-53e3-4b46-8d9e-0d9947bb211d.mp4
 
 ### **Usage:**
 <br>
